@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="714.0" prefWidth="1275.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.listController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.84" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #0b0b0b; -fx-border-color: #ffa600; -fx-border-width: 5px;">
+         <children>
+            <AnchorPane layoutX="5.0" layoutY="57.0" opacity="0.79" prefHeight="659.0" prefWidth="1270.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <TableView fx:id="TableView" prefHeight="328.0" prefWidth="722.0">
+                    <columns>
+                      <TableColumn fx:id="company" onEditCommit="#editCompany" prefWidth="63.99999713897705" text="Company" />
+                      <TableColumn fx:id="specialisation" prefWidth="90.39999389648438" text="Specialisation" />
+                        <TableColumn fx:id="workingConditions" prefWidth="88.0" text="Work.. Cond.." />
+                        <TableColumn fx:id="payment" prefWidth="71.19996643066406" text="Payment" />
+                        <TableColumn fx:id="workingExperience" prefWidth="100.00006103515625" text="Work... Exp..." />
+                        <TableColumn fx:id="education" prefWidth="120.0" text="Education" />
+                        <TableColumn fx:id="English" prefWidth="108.800048828125" text="English" />
+                        <TableColumn fx:id="License" prefWidth="82.39996337890625" text="License" />
+                    </columns>
+                  </TableView>
+                  <Button fx:id="DeleteButton" layoutX="764.0" layoutY="192.0" mnemonicParsing="false" onAction="#delete" prefHeight="51.0" prefWidth="217.0" text="Delete Vacancy">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="EditButton" layoutX="1027.0" layoutY="192.0" mnemonicParsing="false" onAction="#edit" prefHeight="51.0" prefWidth="200.0" text="Edit">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="AddButton" layoutX="1026.0" layoutY="422.0" mnemonicParsing="false" onAction="#add" prefHeight="51.0" prefWidth="207.0" text="Add Vacancy">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="FindButton" layoutX="1029.0" layoutY="98.0" mnemonicParsing="false" text="Find">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Text layoutX="805.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter company name which u want to find">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="companyButton" layoutX="764.0" layoutY="299.0" prefHeight="26.0" prefWidth="218.0" promptText="company" />
+                  <TextField fx:id="workingExpButton" layoutX="285.0" layoutY="368.0" prefHeight="26.0" prefWidth="191.0" promptText="workingExp" />
+                  <TextField fx:id="paymentButton" layoutX="504.0" layoutY="368.0" prefHeight="26.0" prefWidth="218.0" promptText="payment" />
+                  <TextField fx:id="conditionsButton" layoutX="768.0" layoutY="368.0" prefHeight="26.0" prefWidth="218.0" promptText="workingCond" />
+                  <TextField fx:id="specialisationButton" layoutX="1028.0" layoutY="299.0" prefHeight="26.0" prefWidth="207.0" promptText="specialisation" />
+                  <TextField fx:id="LicenseButton" layoutX="154.0" layoutY="368.0" prefHeight="26.0" prefWidth="94.0" promptText="License" />
+                  <TextField fx:id="educationButton" layoutX="1027.0" layoutY="368.0" prefHeight="26.0" prefWidth="207.0" promptText="education" />
+                  <TextField fx:id="EnglishButton" layoutX="29.0" layoutY="368.0" prefHeight="26.0" prefWidth="88.0" promptText="English" />
+                  <TextField fx:id="SearchField" layoutX="764.0" layoutY="111.0" onKeyReleased="#SearchBtn" prefHeight="26.0" prefWidth="211.0" promptText="Company" />
+               </children>
+            </AnchorPane>
+            <Label fx:id="joobleButton" layoutX="23.0" layoutY="10.0" opacity="0.84" text="JOOBLE" textFill="#a89e9e">
+               <font>
+                  <Font name="Calibri" size="35.0" />
+               </font>
+            </Label>
+            <Button fx:id="FindVacancyButton" layoutX="922.0" layoutY="9.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="144.0" style="-fx-background-color: orange; -fx-border-radius: 10px;" text="Find Vacancy" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <Button fx:id="PlaceVacancyButton" layoutX="1113.0" layoutY="9.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="144.0" style="-fx-background-color: orange; -fx-border-radius: 10px;" text="Place Vacancy" textFill="#ffffff">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

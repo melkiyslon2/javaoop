@@ -1,0 +1,1 @@
+nix 123 10-19.00 1000 0 bachelor yes yes
